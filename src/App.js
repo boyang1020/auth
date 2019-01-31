@@ -8,6 +8,7 @@ class App extends Component {
   state = { loggedIn: null };
 
   componentWillMount() {
+    //  add firebase to your app right here inside firebase.initializeApp()
     firebase.initializeApp();
 
     firebase.auth().onAuthStateChanged((user) => {
